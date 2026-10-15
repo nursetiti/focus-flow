@@ -1,0 +1,175 @@
+
+.course-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 48px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.course-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.course-title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.course-subtitle {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #565B78;
+}
+.add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 12px;
+  background: #5046E5;
+  color: #fff;
+  font: 700 14px Manrope, Inter, system-ui, sans-serif;
+  cursor: pointer;
+}
+.add-btn:hover { background: #4338CA; }
+
+.empty-course{
+  border: dotted rgba(0, 0, 0, 0.13);
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Manrope, Inter, system-ui, sans-serif;
+  color: #14142B;
+}
+
+.add-course-empty{
+  background-color:#E8E6FB ;
+  padding:5px 15px;
+  border-radius: 15px;
+  color: #4338CA;
+}
+/* Card */
+.course-card {
+  background: #fff;
+  border: 1px solid #E3E5F2;
+  border-radius: 20px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: Manrope, Inter, system-ui, sans-serif;
+  color: #14142B;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.course-card p { margin: 0; }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-code {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--course-soft);
+  color: var(--course-ink);
+}
+.card-actions { display: flex; gap: 4px; }
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: #565B78;
+  cursor: pointer;
+}
+.icon-btn:hover { background: #F3F4FB; }
+
+.card-course {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.progress-track {
+  height: 8px;
+  background: #E6E8F5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--course);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+.progress-analysis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #565B78;
+}
+.card-footer {
+  border-top: 1px solid #EEF0F8;
+  padding-top: 12px;
+  font-size: 13px;
+  color: #565B78;
+}
+
+/* Add course component */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styling */
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
