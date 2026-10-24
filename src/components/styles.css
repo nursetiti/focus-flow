@@ -55,6 +55,7 @@
 .add-course-empty{
   background-color:#E8E6FB ;
   padding:5px 15px;
+  cursor: pointer;
   border-radius: 15px;
   color: #4338CA;
 }
@@ -172,4 +173,66 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
+}
+
+/* add course */
+.add-form-input {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.add-course-form input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.extra{
+  margin: 10px 0;
+  display: grid;
+}
+
+.form-actions{
+  display: flex;
+  font-weight: 800;
+  margin: 50px 0 0 0;
+  gap: 12px;
+  justify-content: end;
+}
+.form-actions button{
+  padding:15px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.cancel-btn{
+  background-color: rgba(128, 128, 128, 0.219);
+}
+.save-btn{
+  background-color: #4338CA;
+  color: white;
+}
+.color-options {
+    display: flex;
+    gap: 12px;
+}
+
+.course-color button{
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  margin:0 3px ;
+}
+.color-options button.selected {
+    outline: 3px solid currentColor;
+    /* outline-offset: 3px; */
 }

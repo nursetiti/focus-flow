@@ -5,12 +5,10 @@ export default function CourseCard({
   code, name, hoursDone, hoursGoal, topicsDone, topicsTotal, next,
   color, soft, ink, onEdit, onDelete,}) {
   const pct = Math.min(100, (hoursDone / hoursGoal) * 100)
-  function courseClick(){
-    console.log("Clicked")
-  }
-
+  console.log(name, color);
+ 
   return (
-    <div onClick={courseClick}
+    <div
       className="course-card"
       style={{ '--course': color, '--course-soft': soft, '--course-ink': ink }}
     >
